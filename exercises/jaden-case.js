@@ -10,10 +10,20 @@
  *
  */
 
+function jadenCase(str){
+    
+str = str.split(" ");
 
+for(let i=0 ;i < str.length ; i++){
+    str [i] = str[i].charAt(0).toUpperCase() + str[i].substring(1).toLowerCase();
+}
 
+return str.join(" ");
+
+}
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+
+jadenCase("le petit poucet");
 // End of tests */
